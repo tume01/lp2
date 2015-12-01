@@ -71,7 +71,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\AlumnoFactory.cs" />
+    <Compile Include="Persistances\AlumnoPersistance.cs" />
+    <Compile Include="Repositories\AlumnoRepository.cs" />
+    <Compile Include="Factories\EspecialidadFactory.cs" />
+    <Compile Include="Persistances\EspecialidadPersistance.cs" />
+    <Compile Include="Repositories\EspecialidadRepository.cs" />
     <Compile Include="IService2.cs" />
+    <Compile Include="Factories\ProfesorFactory.cs" />
+    <Compile Include="Persistances\ProfesorPersistance.cs" />
+    <Compile Include="Repositories\ProfesorRepository.cs" />
+    <Compile Include="Factories\ReunionFactory.cs" />
+    <Compile Include="Persistances\ReunionPersistance.cs" />
+    <Compile Include="Repositories\ReunionRepository.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
