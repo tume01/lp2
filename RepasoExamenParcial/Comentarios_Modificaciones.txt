@@ -1,0 +1,31 @@
+pregunta 4 : para esta pregunta se ha creado las clases hijas de Alumno , AlumnoEEGGCC y AlumnoFCI , como el sistema no hace mayor 
+distincion de tan solo un tipo de alumno estas clases solo tienen los atributos agregados segun el problema y sus set y get segun corresponda
+estas atributos son especialdiad anterior y actual para el EEGGCC y resume para FCI que sera el resumen al momento de cmabiar de EEGGCC a FCI
+
+pregunta 5 : se ha creado la clase usuario la cual es simple tiene nombre de usuario, contraseña y un tipo que sera el nivel de 
+privilegios que cada usuario posee 0= generla 1 = eeggcc y 2 = fci , para el login del examen puede usar los siguiente usuarios
+nombre usuario = tume 
+pass = 00060 
+tipo = general
+
+nombre usuario = franco
+pass = 2011
+tipo = eeggcc
+
+nombre usuario  = fiestas
+pass = 1234	
+tipo = fci 
+
+pregunta 6 : se implementan las ventanas segun el modelo son los respectivos campos y toostrip menu , para este menu el campo reportes 
+esta deshabilitado en el load para que luego en le login se habilite 
+luego de loguearse aparecera el arbol de elementos con los elementos segun lso privilegios que tenga el usuario
+tambien existe el codigo para agrega run profesor y un alumno segun sea el caso de priviligeios correspondientes
+por ultimo se crea una ventana para reportes que tendra los inputs del codigo y de las fehcas corresondientes y se muestra el grafico
+segun los filtros 
+
+
+/// comentarios practica 5 
+
+la ruta esta en el service1.svc.cs la cual es absoluta por cosas del lab , en caso desee un nuevo usario puede crear nuevos 
+los comentarios pasados son del parcial ,tambien puede verlos ya que muchas de las funciones del parcial estan en este lab 
+o usar le general que he creado tume01  , pass 1234 los de arriba son pasados 

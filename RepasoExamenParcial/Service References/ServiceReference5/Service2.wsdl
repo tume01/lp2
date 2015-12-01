@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service2" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51018/Service2.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51018/Service2.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51018/Service2.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService1" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService2_agregarProfesorTutor_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarProfesorTutor" />
+  </wsdl:message>
+  <wsdl:message name="IService2_agregarProfesorTutor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarProfesorTutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_buscarProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IService2_buscarProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_agregarAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarAlumno" />
+  </wsdl:message>
+  <wsdl:message name="IService2_agregarAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_crearProfesor_InputMessage">
+    <wsdl:part name="parameters" element="tns:crearProfesor" />
+  </wsdl:message>
+  <wsdl:message name="IService2_crearProfesor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:crearProfesorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_crearAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:crearAlumno" />
+  </wsdl:message>
+  <wsdl:message name="IService2_crearAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:crearAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_buscarAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarAlumno" />
+  </wsdl:message>
+  <wsdl:message name="IService2_buscarAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getTutoresCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTutoresCount" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getTutoresCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTutoresCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getTutor_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTutor" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getTutor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getAlumnos_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAlumnos" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getAlumnos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAlumnosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_agregarReunion_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarReunion" />
+  </wsdl:message>
+  <wsdl:message name="IService2_agregarReunion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarReunionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getProfesorTutor_InputMessage">
+    <wsdl:part name="parameters" element="tns:getProfesorTutor" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getProfesorTutor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getProfesorTutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_buscarTutor_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarTutor" />
+  </wsdl:message>
+  <wsdl:message name="IService2_buscarTutor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarTutorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService2">
+    <wsdl:operation name="agregarProfesorTutor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/agregarProfesorTutor" message="tns:IService2_agregarProfesorTutor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/agregarProfesorTutorResponse" message="tns:IService2_agregarProfesorTutor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/buscarProfesor" message="tns:IService2_buscarProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/buscarProfesorResponse" message="tns:IService2_buscarProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/agregarAlumno" message="tns:IService2_agregarAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/agregarAlumnoResponse" message="tns:IService2_agregarAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="crearProfesor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/crearProfesor" message="tns:IService2_crearProfesor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/crearProfesorResponse" message="tns:IService2_crearProfesor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="crearAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/crearAlumno" message="tns:IService2_crearAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/crearAlumnoResponse" message="tns:IService2_crearAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/buscarAlumno" message="tns:IService2_buscarAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/buscarAlumnoResponse" message="tns:IService2_buscarAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTutoresCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/getTutoresCount" message="tns:IService2_getTutoresCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/getTutoresCountResponse" message="tns:IService2_getTutoresCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTutor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/getTutor" message="tns:IService2_getTutor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/getTutorResponse" message="tns:IService2_getTutor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAlumnos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/getAlumnos" message="tns:IService2_getAlumnos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/getAlumnosResponse" message="tns:IService2_getAlumnos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarReunion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/agregarReunion" message="tns:IService2_agregarReunion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/agregarReunionResponse" message="tns:IService2_agregarReunion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getProfesorTutor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/getProfesorTutor" message="tns:IService2_getProfesorTutor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/getProfesorTutorResponse" message="tns:IService2_getProfesorTutor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarTutor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/buscarTutor" message="tns:IService2_buscarTutor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/buscarTutorResponse" message="tns:IService2_buscarTutor_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService2" type="tns:IService2">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="agregarProfesorTutor">
+      <soap:operation soapAction="http://tempuri.org/IService2/agregarProfesorTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarProfesor">
+      <soap:operation soapAction="http://tempuri.org/IService2/buscarProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarAlumno">
+      <soap:operation soapAction="http://tempuri.org/IService2/agregarAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearProfesor">
+      <soap:operation soapAction="http://tempuri.org/IService2/crearProfesor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearAlumno">
+      <soap:operation soapAction="http://tempuri.org/IService2/crearAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarAlumno">
+      <soap:operation soapAction="http://tempuri.org/IService2/buscarAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTutoresCount">
+      <soap:operation soapAction="http://tempuri.org/IService2/getTutoresCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTutor">
+      <soap:operation soapAction="http://tempuri.org/IService2/getTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAlumnos">
+      <soap:operation soapAction="http://tempuri.org/IService2/getAlumnos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarReunion">
+      <soap:operation soapAction="http://tempuri.org/IService2/agregarReunion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProfesorTutor">
+      <soap:operation soapAction="http://tempuri.org/IService2/getProfesorTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarTutor">
+      <soap:operation soapAction="http://tempuri.org/IService2/buscarTutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service2">
+    <wsdl:port name="BasicHttpBinding_IService2" binding="tns:BasicHttpBinding_IService2">
+      <soap:address location="http://localhost:51018/Service2.svc/TutorService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

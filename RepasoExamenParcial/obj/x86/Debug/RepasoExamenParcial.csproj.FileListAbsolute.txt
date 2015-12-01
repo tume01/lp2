@@ -1,0 +1,48 @@
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\obj\x86\Debug\RepasoExamenParcial.csprojResolveAssemblyReference.cache
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\obj\x86\Debug\Vista.Form1.resources
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\obj\x86\Debug\Vista.FormAlumno.resources
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\obj\x86\Debug\Vista.Form2.resources
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\obj\x86\Debug\Vista.Login.resources
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\obj\x86\Debug\RepasoExamenParcial.csproj.GenerateResource.Cache
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\bin\Debug\ConsoleApplication.exe
+C:\Users\czapata.INF\Documents\Visual Studio 2013\Projects\RepasoExamenParcial\bin\Debug\ConsoleApplication.pdb
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\RepasoExamenParcial.csprojResolveAssemblyReference.cache
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\Vista.Form1.resources
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\Vista.FormAlumno.resources
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\Vista.Form2.resources
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\Vista.Login.resources
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\RepasoExamenParcial.csproj.GenerateResource.Cache
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\bin\Debug\ConsoleApplication.exe
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\bin\Debug\ConsoleApplication.pdb
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\Vista.formReporte.resources
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\Practica2.Vista.login.resources
+C:\Users\Franco\Downloads\RepasoExamenParcial\RepasoExamenParcial\obj\x86\Debug\Practica2.Vista.CrearReunion.resources
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\bin\Debug\ConsoleApplication.exe
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\bin\Debug\ConsoleApplication.pdb
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\RepasoExamenParcial.csprojResolveAssemblyReference.cache
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Practica2.Vista.CrearReunion.resources
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.Form1.resources
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.formReporte.resources
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Practica2.Vista.login.resources
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.FormAlumno.resources
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.Form2.resources
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.Login.resources
+C:\Users\Franco\Downloads\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\RepasoExamenParcial.csproj.GenerateResource.Cache
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\ConsoleApplication.exe
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\ConsoleApplication.pdb
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\RepasoExamenParcial.csprojResolveAssemblyReference.cache
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Practica2.Vista.CrearReunion.resources
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.Form1.resources
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.formReporte.resources
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.FormAlumno.resources
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.Form2.resources
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.Login.resources
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\RepasoExamenParcial.csproj.GenerateResource.Cache
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\bin\Debug\ConsoleApplication.exe
+C:\temp\parcial\lp2_parcial\RepasoExamenParcial\bin\Debug\ConsoleApplication.pdb
