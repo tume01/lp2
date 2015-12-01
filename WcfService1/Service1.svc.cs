@@ -7,6 +7,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using WcfService1.Factories;
+using WcfService1.Persistances;
+using WcfService1.Repositories;
 
 namespace WcfService1
 {
@@ -39,44 +42,22 @@ namespace WcfService1
             {
                 throw new ArgumentNullException("composite");
             }
-
-            usuarios.Add(newUsuario);
-
-            FileStream Output = new FileStream("C:\\temp\\users.bin", FileMode.Create, FileAccess.Write);
-            BinaryFormatter Formateador = new BinaryFormatter();
-            Formateador.Serialize(Output, usuarios);
-            Output.Close();
+            UsuarioRepository.insert(newUsuario);
+           
 
             return usuarios.Count();
         }
 
         public Usuario buscarUsuario(string username)
         {
-            foreach (Usuario u in usuarios)
-            {
-                if (username == u.UserName)
-                {
-                    return u;
-                }
-            }
+            Usuario selectedUser  = UserPersistance.getUserById(username);
 
-            return null;
+            return selectedUser;
         }
  
         public Service1()
         {
-            FileStream Input = new FileStream("C:\\temp\\users.bin", FileMode.OpenOrCreate, FileAccess.Read);
-            BinaryFormatter Formateador = new BinaryFormatter();
-
-            try
-            {
-                usuarios = (List<Usuario>)Formateador.Deserialize(Input);
-            }
-            catch (SerializationException e)
-            {
-                System.Console.WriteLine(e.Message);
-            }
-            Input.Close();
+           
         }
     }
 }

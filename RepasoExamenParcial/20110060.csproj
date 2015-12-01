@@ -69,23 +69,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlador\GestorAlumnos.cs" />
-    <Compile Include="Controlador\GestorTutores.cs" />
-    <Compile Include="Controlador\HiloFin.cs" />
-    <Compile Include="Controlador\HiloIdle.cs" />
-    <Compile Include="Controlador\ProfesorTutor.cs" />
-    <Compile Include="Controlador\Saver.cs" />
-    <Compile Include="Controlador\Timer.cs" />
-    <Compile Include="Controlador\TimerTimeIdle.cs" />
-    <Compile Include="Modelo\Alumno.cs" />
-    <Compile Include="Modelo\AlumnoEEGGCC.cs" />
-    <Compile Include="Modelo\AlumnoFCI.cs" />
-    <Compile Include="Modelo\Especialidad.cs" />
-    <Compile Include="Modelo\Persona.cs" />
-    <Compile Include="Modelo\Profesor.cs" />
-    <Compile Include="Modelo\ProfesorContratado.cs" />
-    <Compile Include="Modelo\ProfesorOrdinario.cs" />
-    <Compile Include="Modelo\Reunion.cs" />
+    <Compile Include="Timers\HiloFin.cs" />
+    <Compile Include="Timers\HiloIdle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -112,6 +97,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Timers\Timer.cs" />
+    <Compile Include="Timers\TimerTimeIdle.cs" />
     <Compile Include="Vista\CrearReunion.cs">
       <SubType>Form</SubType>
     </Compile>

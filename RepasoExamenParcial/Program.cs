@@ -3,8 +3,6 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
-using Controlador;
-using Modelo;
 using Vista;
 
     class Program

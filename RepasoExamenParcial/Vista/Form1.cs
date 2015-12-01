@@ -93,9 +93,6 @@ namespace Vista
             int facultdad = 0;
             int j;
 
-
-
-
             for (int i = 0; i < serviceTutor.getTutoresCount(); i++)
             {
                 Profesor nodeTutor = serviceTutor.getProfesorTutor(i);
@@ -260,10 +257,6 @@ namespace Vista
                 serviceTutor.agregarAlumno(FormAlumno.AlumnoAgregado);
                 
 
-
-               // GestorTutores.buscarTutor(extraerCodigo(this.treeView1.SelectedNode.Text)).agregarAlumno(FormAlumno.AlumnoAgregado);
-                
-
                 //Falta Agregar Tutor al alumno
                 cargarArbol();
             }
@@ -372,8 +365,7 @@ namespace Vista
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Saver.cargarAlumnos();
-            Saver.cargarTutores();
+           
             Application.Idle += new EventHandler(startIdle);
             
         }

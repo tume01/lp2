@@ -25,9 +25,7 @@ namespace Practica2.Controlador
 
         void CerrarTodo(Object sender, EventArgs args)
         {
-            Saver.GuardarAlumno(GestorAlumnos.Alumnos);
-            Saver.GuardarTutores(GestorTutores.Tutores); // grabara todo el trabajo hecho hasta ese punto 
-            
+                        
             foreach (Form frm in formualrioPrincipal.MdiChildren)
             {
                 frm.Close();
