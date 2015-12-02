@@ -44,10 +44,16 @@ namespace WcfService1
         string agregarReunion(Alumno alumno, Profesor tutor, string fecha, string tema, string sugerencia);
 
         [OperationContract]
-        Profesor getProfesorTutor(int i);
+        int getProfesorTutor(int i);
 
         [OperationContract]
         ProfesorTutor buscarTutor(int codigo);
+
+        [OperationContract]
+        List<Reunion> getReuniones(Profesor profesor);
+
+        [OperationContract]
+        int refresh();
     }
 
 

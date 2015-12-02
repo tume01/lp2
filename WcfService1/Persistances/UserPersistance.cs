@@ -20,7 +20,7 @@ namespace WcfService1.Persistances
             MySqlConnection connection = new MySqlConnection(connecString);
             MySqlCommand command = connection.CreateCommand();
             connection.Open();
-            command.CommandText = "select * from usuarios where userName =" + user + ";";
+            command.CommandText = "select * from usuarios where userName='" + user + "';";
             Usuario newUsuario = null;
             try
             {

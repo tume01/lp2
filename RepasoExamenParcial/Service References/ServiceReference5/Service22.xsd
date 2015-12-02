@@ -176,7 +176,7 @@
   <xs:element name="getProfesorTutorResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="getProfesorTutorResult" nillable="true" type="q15:Profesor" />
+        <xs:element minOccurs="0" name="getProfesorTutorResult" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -190,7 +190,19 @@
   <xs:element name="buscarTutorResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="buscarTutorResult" nillable="true" type="q16:ProfesorTutor" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="buscarTutorResult" nillable="true" type="q15:ProfesorTutor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="refresh">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="refreshResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="refreshResult" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

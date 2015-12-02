@@ -32,8 +32,9 @@ namespace Vista
         Timer finished;
         int contadormin = 0;
 
-        Controlador.HiloFin hiloFin;
-        Controlador.HiloIdle hiloIdle;
+        Timers.HiloFin hiloFin;
+        Timers.HiloIdle hiloIdle;
+        Timers.HiloRefresh hiloRefresh;
         delegate void SetTextCallback(string text);
         delegate void SetTreeCallback(int val, string text);
         public Practica2.ServiceReference5.Service2Client serviceTutor = new Practica2.ServiceReference5.Service2Client();
@@ -70,10 +71,12 @@ namespace Vista
                     this.nombreUsuario.Visible = true;
                     this.tiempoInactivo.Visible = true;
                     this.nombreUsuario.Text = newLogin.usuarioActual.UserName;
-                    hiloFin = new Controlador.HiloFin("fin", this);
-                    hiloIdle = new Controlador.HiloIdle("idle", this);
+                    hiloFin = new Timers.HiloFin("fin", this);
+                    hiloIdle = new Timers.HiloIdle("idle", this);
+                    hiloRefresh = new Timers.HiloRefresh("refresh", this);
                     hiloFin.Start();
                     hiloIdle.Start();
+                    //hiloRefresh.Start();
                     this.logged = 1;
 
                     Application.AddMessageFilter(this);
@@ -95,7 +98,7 @@ namespace Vista
 
             for (int i = 0; i < serviceTutor.getTutoresCount(); i++)
             {
-                Profesor nodeTutor = serviceTutor.getProfesorTutor(i);
+                Profesor nodeTutor = serviceTutor.getTutor(i);
                 this.treeView1.Nodes[0].Nodes.Add("Profesor", nodeTutor.Codigo+"-"+nodeTutor.Nombre);
                 Alumno[] ListaAlumno = serviceTutor.getAlumnos(nodeTutor);
                 for (j = 0; j < ListaAlumno.Length; j++)
@@ -454,6 +457,14 @@ namespace Vista
                 dataGridView1.Rows.Clear();
                 logged = loggedVal;
             }
+        }
+
+        private void actualizarButton_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            serviceTutor.refresh();
+            cargarArbol();
+            
         }
     }
 }

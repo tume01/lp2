@@ -21,7 +21,7 @@ namespace WcfService1
             connection.Open();
             MySqlCommand command = connection.CreateCommand();
 
-            command.CommandText = "insert into alumno (nombre,dni,correo,telefono,ciclo,creditos,especialidadActual,especialidadAnterior,resumenReuniones,unidad,tutor) values('" + alumno.Nombre + "','" + alumno.Dni + "','" + alumno.Correo + "','" + alumno.Telefono + "','" + alumno.Ciclo + "','" + alumno.EspecialidadActual.Codigo + "','" + alumno.EspecialidadAnterior.Codigo + "','" + alumno.ResumenReuniones + "','" + alumno.Unidad + "','" + alumno.Tutor.Codigo + "');";
+            command.CommandText = "insert into alumno (codigo,nombre,dni,correo,telefono,ciclo,creditos,especialidadActual,especialidadAnterior,resumenReuniones,unidad,tutor) values('"+alumno.Codigo+"','" + alumno.Nombre + "','" + alumno.Dni + "','" + alumno.Correo + "','" + alumno.Telefono + "','" + alumno.Ciclo + "','"+alumno.Creditos+"','" + alumno.EspecialidadActual.Codigo + "','" + alumno.EspecialidadAnterior.Codigo + "','" + alumno.ResumenReuniones + "','" + alumno.Unidad + "','" + alumno.Tutor.Codigo + "');";
 
             try
             {

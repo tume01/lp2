@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using Controlador;
+using Timers;
 using Vista;
 
 namespace Practica2.Controlador

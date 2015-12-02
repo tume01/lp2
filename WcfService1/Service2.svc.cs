@@ -95,10 +95,17 @@ namespace WcfService1
             conn.Close();
         }
                        
-        public Profesor getProfesorTutor(int i)
+        public int getProfesorTutor(int i)
         {
-            if (i < tutores.Count) return tutores[i].Profesor;
-            return null;
+            try
+            {
+                if (i < tutores.Count) return tutores[i].Codigo;
+            }catch(Exception e)
+            {
+                string message = e.Message;
+            }
+            
+            return 0;
         }
         public string agregarProfesorTutor(Profesor profesor)
         {
@@ -188,6 +195,24 @@ namespace WcfService1
         {
             return new Especialidad(codigo, nombre);
         }
-        
+
+        public int refresh()
+        {
+            try
+            {
+                loadTutores();
+                loadAlumnos();
+                return 1;
+            }catch(Exception e)
+            {
+                return 0;
+            }
+        }
+
+        public List<Reunion> getReuniones(Profesor profesor)
+        {
+            ProfesorTutor tutor = buscarTutor(profesor.Codigo);
+            return tutor.ListaReunion;
+        }
     }
 }

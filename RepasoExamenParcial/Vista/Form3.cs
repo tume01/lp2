@@ -51,11 +51,11 @@ namespace Vista
             };
             for (int x = 0; x< total; x++)
             {
-                Profesor selected  = serviceTutor.getTutor(x);
-
-                valores[x] = 1; //selected.cantidadReuniones();
+                int codigoTutor  = serviceTutor.getProfesorTutor(x);
+                ProfesorTutor selected = serviceTutor.buscarTutor(codigoTutor);
+                valores[x] = selected.ListaReunion.Length;
                 
-                this.dataGridView1.Rows.Add(selected.Codigo, selected.Nombre,valores[x],colores[x]);
+                this.dataGridView1.Rows.Add(selected.Codigo, selected.Profesor.Nombre,valores[x],colores[x]);
             }
 
             Bitmap pie = Draw(Color.White, 300,300,valores);
@@ -134,11 +134,11 @@ namespace Vista
             int totalReuniones = 0;
             foreach(Alumno a in serviceTutor.getAlumnos(profesor))
             {
-                foreach (Reunion r in a.ListaReuniones)
+                foreach (Reunion r in serviceTutor.buscarAlumno(a.Codigo).ListaReuniones)
                 {
                     if (r.Profesor.Codigo == codigo)
                     {
-                        if (r.Fecha.CompareTo(inicio.ToString("YY-mm-dd")) >= 0 && r.Fecha.CompareTo(fin.ToString("YY-mm-dd")) <= 0)
+                        if (r.Fecha.CompareTo(inicio.ToString("dd/mm/YYYY")) >= 0 && r.Fecha.CompareTo(fin.ToString("dd/mm/YYYY")) <= 0)
                         {
                             totalReuniones++;
                         }
@@ -201,7 +201,7 @@ namespace Vista
             label4.Visible = true;
             label5.Visible = true;
 
-            grafico.DrawImage(pie, 100, 20);
+            grafico.DrawImage(pie, 270, 100);
         }
     }
 }

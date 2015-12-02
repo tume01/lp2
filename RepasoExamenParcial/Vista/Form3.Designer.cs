@@ -54,7 +54,7 @@
             this.Codigo,
             this.Cantidad,
             this.Colores});
-            this.dataGridView1.Location = new System.Drawing.Point(177, 379);
+            this.dataGridView1.Location = new System.Drawing.Point(163, 445);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(460, 164);
             this.dataGridView1.TabIndex = 0;
@@ -81,7 +81,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(363, 572);
+            this.button1.Location = new System.Drawing.Point(349, 638);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -150,7 +150,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(252, 85);
+            this.label4.Location = new System.Drawing.Point(588, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 9;
@@ -160,7 +160,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(255, 115);
+            this.label5.Location = new System.Drawing.Point(588, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 10;
@@ -171,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 608);
+            this.ClientSize = new System.Drawing.Size(797, 682);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

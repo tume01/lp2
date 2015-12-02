@@ -17,7 +17,7 @@ namespace WcfService1
 
             Alumno alumno = AlumnoPersistance.getAlumnoByCodigo(codigoAlumno);
             Profesor profesor = ProfesorPersistance.getProfesorByCodigo(codigoProfesor);
-            string fecha = reader["fecha"].ToString();
+            string fecha = reader["fecha"].ToString().Split(' ')[0];
             string tem = reader["tema"].ToString();
             string sug = reader["sugerencias"].ToString();
             return new Reunion(alumno, profesor, fecha, tem, sug);

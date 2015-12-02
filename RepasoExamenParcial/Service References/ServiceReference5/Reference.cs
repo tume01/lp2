@@ -833,10 +833,13 @@ namespace Practica2.ServiceReference5 {
         string agregarReunion(Practica2.ServiceReference5.Alumno alumno, Practica2.ServiceReference5.Profesor tutor, string fecha, string tema, string sugerencia);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/getProfesorTutor", ReplyAction="http://tempuri.org/IService2/getProfesorTutorResponse")]
-        Practica2.ServiceReference5.Profesor getProfesorTutor(int i);
+        int getProfesorTutor(int i);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/buscarTutor", ReplyAction="http://tempuri.org/IService2/buscarTutorResponse")]
         Practica2.ServiceReference5.ProfesorTutor buscarTutor(int codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/refresh", ReplyAction="http://tempuri.org/IService2/refreshResponse")]
+        int refresh();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -906,12 +909,16 @@ namespace Practica2.ServiceReference5 {
             return base.Channel.agregarReunion(alumno, tutor, fecha, tema, sugerencia);
         }
         
-        public Practica2.ServiceReference5.Profesor getProfesorTutor(int i) {
+        public int getProfesorTutor(int i) {
             return base.Channel.getProfesorTutor(i);
         }
         
         public Practica2.ServiceReference5.ProfesorTutor buscarTutor(int codigo) {
             return base.Channel.buscarTutor(codigo);
+        }
+        
+        public int refresh() {
+            return base.Channel.refresh();
         }
     }
 }

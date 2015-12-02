@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using Vista;
 
-namespace Controlador
+namespace Timers
 {
     class HiloFin
     {

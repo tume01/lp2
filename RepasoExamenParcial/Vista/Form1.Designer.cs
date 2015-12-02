@@ -46,6 +46,7 @@
             this.nombreUsuario = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tiempoInactivo = new System.Windows.Forms.Label();
+            this.actualizarButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -79,21 +80,21 @@
             // iniciarSesiónToolStripMenuItem
             // 
             this.iniciarSesiónToolStripMenuItem.Name = "iniciarSesiónToolStripMenuItem";
-            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iniciarSesiónToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.iniciarSesiónToolStripMenuItem.Text = "Iniciar Sesión";
             this.iniciarSesiónToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesiónToolStripMenuItem_Click);
             // 
             // cerrarSesiónToolStripMenuItem
             // 
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -125,6 +126,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.actualizarButton);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer1.Size = new System.Drawing.Size(820, 373);
             this.splitContainer1.SplitterDistance = 271;
@@ -220,6 +222,16 @@
             this.tiempoInactivo.Text = "0";
             this.tiempoInactivo.Visible = false;
             // 
+            // actualizarButton
+            // 
+            this.actualizarButton.Location = new System.Drawing.Point(458, 3);
+            this.actualizarButton.Name = "actualizarButton";
+            this.actualizarButton.Size = new System.Drawing.Size(75, 23);
+            this.actualizarButton.TabIndex = 6;
+            this.actualizarButton.Text = "Actualizar";
+            this.actualizarButton.UseVisualStyleBackColor = true;
+            this.actualizarButton.Click += new System.EventHandler(this.actualizarButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,5 +280,6 @@
         private System.Windows.Forms.Label nombreUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label tiempoInactivo;
+        private System.Windows.Forms.Button actualizarButton;
     }
 }
