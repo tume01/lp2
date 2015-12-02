@@ -39,11 +39,12 @@ namespace Vista
             if (resultado != -1)
             {
                 MessageBox.Show("Se creo el usuario correctamente");
+                this.Close();
             }
             else
             {
-                MessageBox.Show("No se creo el usuario correctamente");
-                this.Close();
+                MessageBox.Show("No se creo el usuario correctamente, vuelva a intentarlo");
+                
             }
 
         }

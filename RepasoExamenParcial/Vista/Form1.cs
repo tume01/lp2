@@ -76,6 +76,7 @@ namespace Vista
                     hiloRefresh = new Timers.HiloRefresh("refresh", this);
                     hiloFin.Start();
                     hiloIdle.Start();
+                    actualizarButton.Enabled = true;
                     //hiloRefresh.Start();
                     this.logged = 1;
 

@@ -37,6 +37,7 @@
             this.atencionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.actualizarButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnaProfesor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +47,6 @@
             this.nombreUsuario = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tiempoInactivo = new System.Windows.Forms.Label();
-            this.actualizarButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -142,6 +142,17 @@
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.nodeMouseClick);
             // 
+            // actualizarButton
+            // 
+            this.actualizarButton.Enabled = false;
+            this.actualizarButton.Location = new System.Drawing.Point(458, 3);
+            this.actualizarButton.Name = "actualizarButton";
+            this.actualizarButton.Size = new System.Drawing.Size(75, 23);
+            this.actualizarButton.TabIndex = 6;
+            this.actualizarButton.Text = "Actualizar";
+            this.actualizarButton.UseVisualStyleBackColor = true;
+            this.actualizarButton.Click += new System.EventHandler(this.actualizarButton_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -221,16 +232,6 @@
             this.tiempoInactivo.TabIndex = 5;
             this.tiempoInactivo.Text = "0";
             this.tiempoInactivo.Visible = false;
-            // 
-            // actualizarButton
-            // 
-            this.actualizarButton.Location = new System.Drawing.Point(458, 3);
-            this.actualizarButton.Name = "actualizarButton";
-            this.actualizarButton.Size = new System.Drawing.Size(75, 23);
-            this.actualizarButton.TabIndex = 6;
-            this.actualizarButton.Text = "Actualizar";
-            this.actualizarButton.UseVisualStyleBackColor = true;
-            this.actualizarButton.Click += new System.EventHandler(this.actualizarButton_Click);
             // 
             // Form1
             // 
