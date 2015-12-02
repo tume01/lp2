@@ -36,9 +36,22 @@ namespace Vista
             Especialidad newEspecialidad = new Especialidad();
             newEspecialidad.Codigo = 1;
             newEspecialidad.Nombre = "Ingenieria Informatica";
-
+            string unidad;
+            switch (facultad)
+            {
+                case 0:
+                    {
+                        unidad = "FACI";
+                        break;
+                    }
+                default :
+                    {
+                        unidad = "EEGGCC";
+                        break;
+                    }          
+            }
             Service2Client servicio = new Service2Client();
-            Alumno newAlumno = servicio.crearAlumno(codigo, nombre, dni, email, telefono, ciclo, creditos, newEspecialidad, newEspecialidad, "", newEspecialidad.Nombre);
+            Alumno newAlumno = servicio.crearAlumno(codigo, nombre, dni, email, telefono, ciclo, creditos, newEspecialidad, newEspecialidad, "", unidad);
             
             
             AlumnoAgregado = newAlumno;

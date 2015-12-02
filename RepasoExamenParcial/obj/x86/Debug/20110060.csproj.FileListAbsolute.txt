@@ -94,3 +94,4 @@ C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5
 C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5\20110060_practica4\20110060_practica4\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.Form2.resources
 C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5\20110060_practica4\20110060_practica4\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.Login.resources
 C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5\20110060_practica4\20110060_practica4\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\20110060.csproj.GenerateResource.Cache
+C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5\20110060_practica4\20110060_practica4\lp2_parcial\RepasoExamenParcial\obj\x86\Debug\Vista.PasarFacultad.resources

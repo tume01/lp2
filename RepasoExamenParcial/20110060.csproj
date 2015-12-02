@@ -69,6 +69,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Vista\PasarFacultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\PasarFacultad.Designer.cs">
+      <DependentUpon>PasarFacultad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Timers\HiloFin.cs" />
     <Compile Include="Timers\HiloIdle.cs" />
     <Compile Include="Program.cs" />
@@ -145,6 +151,9 @@
     <Compile Include="Vista\Mostrable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Vista\PasarFacultad.resx">
+      <DependentUpon>PasarFacultad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\CrearReunion.resx">
       <DependentUpon>CrearReunion.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +249,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference5\Practica2.ServiceReference5.ProfesorTutor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference5\Practica2.ServiceReference5.Reunion.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference5\Service2.wsdl" />

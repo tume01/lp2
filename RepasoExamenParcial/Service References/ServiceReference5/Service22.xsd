@@ -194,6 +194,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="getReuniones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="profesor" nillable="true" type="q16:Profesor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getReunionesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WcfService1" minOccurs="0" name="getReunionesResult" nillable="true" type="q17:ArrayOfReunion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="refresh">
     <xs:complexType>
       <xs:sequence />
@@ -203,6 +217,21 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="refreshResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pasarFacultad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" type="xs:int" />
+        <xs:element minOccurs="0" name="resumen" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pasarFacultadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pasarFacultadResult" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -79,11 +79,23 @@
   <wsdl:message name="IService2_buscarTutor_OutputMessage">
     <wsdl:part name="parameters" element="tns:buscarTutorResponse" />
   </wsdl:message>
+  <wsdl:message name="IService2_getReuniones_InputMessage">
+    <wsdl:part name="parameters" element="tns:getReuniones" />
+  </wsdl:message>
+  <wsdl:message name="IService2_getReuniones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getReunionesResponse" />
+  </wsdl:message>
   <wsdl:message name="IService2_refresh_InputMessage">
     <wsdl:part name="parameters" element="tns:refresh" />
   </wsdl:message>
   <wsdl:message name="IService2_refresh_OutputMessage">
     <wsdl:part name="parameters" element="tns:refreshResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService2_pasarFacultad_InputMessage">
+    <wsdl:part name="parameters" element="tns:pasarFacultad" />
+  </wsdl:message>
+  <wsdl:message name="IService2_pasarFacultad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pasarFacultadResponse" />
   </wsdl:message>
   <wsdl:portType name="IService2">
     <wsdl:operation name="agregarProfesorTutor">
@@ -134,9 +146,17 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService2/buscarTutor" message="tns:IService2_buscarTutor_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService2/buscarTutorResponse" message="tns:IService2_buscarTutor_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="getReuniones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/getReuniones" message="tns:IService2_getReuniones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/getReunionesResponse" message="tns:IService2_getReuniones_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="refresh">
       <wsdl:input wsaw:Action="http://tempuri.org/IService2/refresh" message="tns:IService2_refresh_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService2/refreshResponse" message="tns:IService2_refresh_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pasarFacultad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService2/pasarFacultad" message="tns:IService2_pasarFacultad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService2/pasarFacultadResponse" message="tns:IService2_pasarFacultad_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService2" type="tns:IService2">
@@ -249,8 +269,26 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getReuniones">
+      <soap:operation soapAction="http://tempuri.org/IService2/getReuniones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="refresh">
       <soap:operation soapAction="http://tempuri.org/IService2/refresh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pasarFacultad">
+      <soap:operation soapAction="http://tempuri.org/IService2/pasarFacultad" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

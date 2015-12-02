@@ -214,5 +214,11 @@ namespace WcfService1
             ProfesorTutor tutor = buscarTutor(profesor.Codigo);
             return tutor.ListaReunion;
         }
+
+        public int pasarFacultad(int codigo,string resumen)
+        {
+            AlumnoRepository.updateFacultad(codigo,resumen,"FACI");
+            return 1;
+        }
     }
 }

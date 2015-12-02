@@ -54,6 +54,9 @@ namespace WcfService1
 
         [OperationContract]
         int refresh();
+
+        [OperationContract]
+        int pasarFacultad(int codigo,string resumen);
     }
 
 

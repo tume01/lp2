@@ -35,5 +35,26 @@ namespace WcfService1
                 return 0;
             }
         }
+
+        public static int updateFacultad(int codigo,string resumen,string unidad)
+        {
+            MySqlConnection connection = new MySqlConnection(connecString);
+            connection.Open();
+            MySqlCommand command = connection.CreateCommand();
+
+            command.CommandText = "update alumno set unidad='"+unidad+ "',resumenReuniones='"+resumen+"' where codigo='"+codigo+"';";
+
+            try
+            {
+                command.ExecuteNonQuery();
+                connection.Close();
+                return 1;
+            }
+            catch (Exception e)
+            {
+                connection.Close();
+                return 0;
+            }
+        }
     }
 }

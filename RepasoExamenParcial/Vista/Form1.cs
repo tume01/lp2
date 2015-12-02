@@ -93,7 +93,7 @@ namespace Vista
             this.treeView1.BeginUpdate();
             this.treeView1.Nodes.Clear();
             this.treeView1.Nodes.Add("Especialidad","Ingeniería Informática");
-            int facultdad = 0;
+           
             int j;
 
             for (int i = 0; i < serviceTutor.getTutoresCount(); i++)
@@ -105,11 +105,11 @@ namespace Vista
                 {
                     Alumno nodeAlumno = ListaAlumno[j];
 
-                    if ((facultdad == 0) && (usuarioActual == 2 || usuarioActual == 0))
+                    if ((nodeAlumno.Unidad == "FACI") && (usuarioActual == 2 || usuarioActual == 0))
                     {
                         this.treeView1.Nodes[0].Nodes[i].Nodes.Add("Alumno", nodeAlumno.Codigo+ "--" + nodeAlumno.Nombre + " " + nodeAlumno.Unidad);
                     }
-                    else if ((facultdad == 1) && (usuarioActual == 1 || usuarioActual == 0))
+                    else if ((nodeAlumno.Unidad == "EEGGCC") && (usuarioActual == 1 || usuarioActual == 0))
                     {
                         this.treeView1.Nodes[0].Nodes[i].Nodes.Add("Alumno", nodeAlumno.Codigo + "--" + nodeAlumno.Nombre + " " + nodeAlumno.Unidad);
                     }
@@ -157,7 +157,9 @@ namespace Vista
                     {
                         e.Node.ContextMenu = new ContextMenu();
                         e.Node.ContextMenu.MenuItems.Add("Agregar Reunion");
+                        e.Node.ContextMenu.MenuItems.Add("Pasar a facultad");
                         e.Node.ContextMenu.MenuItems[0].Click += new EventHandler(agregarReunion);
+                        e.Node.ContextMenu.MenuItems[1].Click += new EventHandler(pasarFacultad);
                         
                         
                     }
@@ -165,7 +167,21 @@ namespace Vista
                     
 
         }
-
+        public void pasarFacultad(object sender, EventArgs e)
+        {
+            int codigoAlumno = extraerCodigo(this.treeView1.SelectedNode.Text);
+            PasarFacultad pasarForm = new PasarFacultad(codigoAlumno);
+            pasarForm.ShowDialog(this);
+            serviceTutor.pasarFacultad(codigoAlumno, pasarForm.resumenString);
+           
+            MessageBox.Show("Alumno cambiado a facultad exitosamente");
+        }
+        public void refreshData()
+        {
+            dataGridView1.Rows.Clear();
+            serviceTutor.refresh();
+            cargarArbol();
+        }
         public void modificarProfesor(object sender, EventArgs e)// este metod esta incompleto llegue a implemntarlo pero tuve un problema al trata de elegir si era 
             //contratado u ordinario ya que esta informacion no estaba en la clase padre profesor 
         {
@@ -461,9 +477,7 @@ namespace Vista
 
         private void actualizarButton_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
-            serviceTutor.refresh();
-            cargarArbol();
+            refreshData();
             
         }
     }

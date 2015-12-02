@@ -838,8 +838,14 @@ namespace Practica2.ServiceReference5 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/buscarTutor", ReplyAction="http://tempuri.org/IService2/buscarTutorResponse")]
         Practica2.ServiceReference5.ProfesorTutor buscarTutor(int codigo);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/getReuniones", ReplyAction="http://tempuri.org/IService2/getReunionesResponse")]
+        Practica2.ServiceReference5.Reunion[] getReuniones(Practica2.ServiceReference5.Profesor profesor);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/refresh", ReplyAction="http://tempuri.org/IService2/refreshResponse")]
         int refresh();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService2/pasarFacultad", ReplyAction="http://tempuri.org/IService2/pasarFacultadResponse")]
+        int pasarFacultad(int codigo, string resumen);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -917,8 +923,16 @@ namespace Practica2.ServiceReference5 {
             return base.Channel.buscarTutor(codigo);
         }
         
+        public Practica2.ServiceReference5.Reunion[] getReuniones(Practica2.ServiceReference5.Profesor profesor) {
+            return base.Channel.getReuniones(profesor);
+        }
+        
         public int refresh() {
             return base.Channel.refresh();
+        }
+        
+        public int pasarFacultad(int codigo, string resumen) {
+            return base.Channel.pasarFacultad(codigo, resumen);
         }
     }
 }
