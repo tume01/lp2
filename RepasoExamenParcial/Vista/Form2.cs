@@ -53,7 +53,7 @@ namespace Vista
             int anio                  = fechaInicio.Year;
             string gradoAcademico     = comboBoxGrado.SelectedText ;
             Especialidad especialidad = new Especialidad();
-            especialidad.Codigo = comboBoxEspecialidad.SelectedIndex;
+            especialidad.Codigo = comboBoxEspecialidad.SelectedIndex+1;
             especialidad.Nombre = "informatica";
             string FechaFin           = fechaInicio.ToString("yyyy-MM-dd");
             string FechaIinicio       = fechaFin.ToString("yyyy-MM-dd");

@@ -31,7 +31,7 @@ namespace Vista
         int contador = 0 ;
         Timer finished;
         int contadormin = 0;
-
+        string currentNode;
         Timers.HiloFin hiloFin;
         Timers.HiloIdle hiloIdle;
         Timers.HiloRefresh hiloRefresh;
@@ -125,6 +125,8 @@ namespace Vista
 
         private void nodeMouseClick(object sender, TreeNodeMouseClickEventArgs e) // handler de eventos de click en el, arbol #pregunta6
         {
+
+            currentNode = e.Node.Text;
             
             if (e.Button==MouseButtons.Left){
                 if (e.Node.Name == "Alumno")                    
@@ -270,7 +272,7 @@ namespace Vista
             formularioAlumno.ShowDialog(this);
             if (FormAlumno.AlumnoAgregado != null)
             {
-                int codigoProfesor = extraerCodigo(this.treeView1.SelectedNode.Text);
+                int codigoProfesor = extraerCodigo(currentNode);
 
                 Profesor profesorSeleccionado = serviceTutor.buscarProfesor(codigoProfesor);
                 FormAlumno.AlumnoAgregado.Tutor = profesorSeleccionado;

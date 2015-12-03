@@ -8,7 +8,7 @@ namespace WcfService1
 {
     public class EspecialidadPersistance
     {
-        public static string connecString = "Server=localhost;Port=3306;Database=lp2;Uid=root;password=secret;";
+        public static string connecString = ConfigDB.configDB.connectString();
 
         public EspecialidadPersistance()
         {

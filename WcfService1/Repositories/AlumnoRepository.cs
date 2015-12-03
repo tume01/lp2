@@ -8,7 +8,7 @@ namespace WcfService1
 {
     public class AlumnoRepository
     {
-        public static string connecString = "Server=localhost;Port=3306;Database=lp2;Uid=root;password=secret;";
+        public static string connecString = ConfigDB.configDB.connectString();
 
         public AlumnoRepository()
         {

@@ -8,7 +8,7 @@ namespace WcfService1
 {
     public class ProfesorRepository
     {
-        public static string connecString = "Server=localhost;Port=3306;Database=lp2;Uid=root;password=secret;";
+        public static string connecString = ConfigDB.configDB.connectString();
 
         public ProfesorRepository()
         {
@@ -21,7 +21,8 @@ namespace WcfService1
             connection.Open();
             MySqlCommand command = connection.CreateCommand();
 
-            command.CommandText = "insert into profesor (nombre,dni,correo,telefono,idioma,año,grado,especialidad,fechaIni,fechaRev,fechaFin,categoria,estutor) values('" + profesor.Nombre + "','" + profesor.Dni + "','" + profesor.Correo + "','" + profesor.Telefono + "','" + profesor.Idioma + "','" + profesor.AnosExp + "','" + profesor.GradoAcademico + "','" + profesor.Especialidad.Codigo + "','" + profesor.FechaIngreso + "','" + profesor.FechaRevalidacion + "','" + profesor.FechaFinCategoria + "','" + profesor.Categoria + "','1');";
+            command.CommandText = "insert into profesor (codigo,nombre,dni,correo,telefono,idioma,año,grado,especialidad,fechaIni,fechaRev,fechaFin,categoria,estutor) values('"+profesor.Codigo+"','" + profesor.Nombre + "','" + profesor.Dni + "','" + profesor.Correo + "','" + profesor.Telefono + "','" + profesor.Idioma + "','" + profesor.AnosExp + "','" + profesor.GradoAcademico + "','" + profesor.Especialidad.Codigo + "','" + profesor.FechaIngreso + "','" + profesor.FechaRevalidacion + "','" + profesor.FechaFinCategoria + "','" + profesor.Categoria + "','1');";
+                                  
 
             try
             {

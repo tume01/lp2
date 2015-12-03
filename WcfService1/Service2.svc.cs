@@ -19,7 +19,7 @@ namespace WcfService1
         private static List<Alumno> alumnos = new List<Alumno>();
         public static string pathTutores = "C:\\temp\\gestorTutoriaTutores.bin";
         public static string pathAlumnos = "C:\\temp\\gestorTutoriaAlumnos.bin";
-        public static string connecString = "Server=localhost;Port=3306;Database=lp2;Uid=root;password=secret;";
+        public static string connecString = ConfigDB.configDB.connectString();
         public static MySqlConnection conn = new MySqlConnection(connecString);
         
         static Service2()

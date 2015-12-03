@@ -35,3 +35,9 @@ C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5
 C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5\20110060_practica4\20110060_practica4\lp2_parcial\WcfService1\obj\Debug\WcfService1.dll
 C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5\20110060_practica4\20110060_practica4\lp2_parcial\WcfService1\obj\Debug\WcfService1.pdb
 C:\Users\Franco\Downloads\try2finallp\try2finallp\try2finallp\20110060_practica5\20110060_practica4\20110060_practica4\lp2_parcial\WcfService1\bin\MySql.Data.dll
+C:\temp\PortableGit-2.6.3-64-bit.7z\lp2\WcfService1\bin\WcfService1.dll.config
+C:\temp\PortableGit-2.6.3-64-bit.7z\lp2\WcfService1\bin\WcfService1.dll
+C:\temp\PortableGit-2.6.3-64-bit.7z\lp2\WcfService1\bin\WcfService1.pdb
+C:\temp\PortableGit-2.6.3-64-bit.7z\lp2\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\temp\PortableGit-2.6.3-64-bit.7z\lp2\WcfService1\obj\Debug\WcfService1.dll
+C:\temp\PortableGit-2.6.3-64-bit.7z\lp2\WcfService1\obj\Debug\WcfService1.pdb

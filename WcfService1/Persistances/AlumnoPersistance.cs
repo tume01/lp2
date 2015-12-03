@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using MySql.Data.MySqlClient;
+using WcfService1.ConfigDB;
 
 namespace WcfService1
 {
     public class AlumnoPersistance
     {
-        public static string connecString = "Server=localhost;Port=3306;Database=lp2;Uid=root;password=secret;";
+        public static string connecString = configDB.connectString();
         public AlumnoPersistance()
         {
 
